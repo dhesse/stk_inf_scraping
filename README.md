@@ -24,7 +24,15 @@ calling
 
     git clone git@github.com:dhesse/stk_inf_scraping.git
 
+# Pipelines
+
+The [pipelines branch][pl] contains some example pipelines in the file
+[pipelines.py][plpy]. Remember to make the changes known in
+[settings.py][cfg].
 
 [stkgh]: stk_inf4000/spiders/stk_inf_gh.py
 [p1]: https://dhesse.github.io/stk_inf_scraping/example.html
 [p2]: https://dhesse.github.io/stk_inf_scraping/example2.html
+[pl]: https://github.com/dhesse/stk_inf_scraping/tree/pipeline
+[plpy]: https://github.com/dhesse/stk_inf_scraping/blob/master/stk_inf4000/pipelines.py
+[cfg]: https://github.com/dhesse/stk_inf_scraping/blob/master/stk_inf4000/settings.py
