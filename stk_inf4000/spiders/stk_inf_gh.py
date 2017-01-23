@@ -18,3 +18,10 @@ class StkInfGhSpider(scrapy.Spider):
         for li in soup('li'):
             yield {'item': li.text,
                    'url': response.url}
+        # now follow all links by simply yielding a Request object
+        # scrapy will automatically call this function with
+        # the new URL
+        for a in soup('a'):
+            href = a['href']
+            target_url = urljoin(response.url, href)
+            yield scrapy.Request(target_url)
