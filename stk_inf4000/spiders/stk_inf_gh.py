@@ -10,7 +10,11 @@ class StkInfGhSpider(scrapy.Spider):
     )
 
     def parse(self, response):
+        """Extract all list items, follow all links unconditionally
+        (which is potentially dangerous)."""
         soup = BeautifulSoup(response.text, 'lxml')
+        # first extract links and yield it,
+        # together with the URL that it's from
         for li in soup('li'):
             yield {'item': li.text,
                    'url': response.url}
