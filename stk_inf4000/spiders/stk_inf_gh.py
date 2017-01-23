@@ -6,7 +6,7 @@ from urlparse import urljoin
 class StkInfGhSpider(scrapy.Spider):
     name = "stk_inf_gh"
     start_urls = (
-        'http://www.https://dhesse.github.io/stk_inf_scraping/example.html/',
+        'https://dhesse.github.io/stk_inf_scraping/example.html',
     )
 
     def parse(self, response):
