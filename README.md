@@ -14,9 +14,9 @@ is now saved at [stk_inf4000/spiders/stk_inf_gh.py][stkgh].
 
 ## docs
 
-The [docs][docs] folder contains the pages that we are going to
+The [docs](docs) folder contains the pages that we are going to
 scrape, available [here][p1] and [here][p2].
 
-[sthgh]: stk_inf4000/spiders/stk_inf_gh.py
+[stkgh]: stk_inf4000/spiders/stk_inf_gh.py
 [p1]: https://dhesse.github.io/stk_inf_scraping/example.htm
 [p2]: https://dhesse.github.io/stk_inf_scraping/example2.htm
