@@ -24,6 +24,24 @@ calling
 
     git clone git@github.com:dhesse/stk_inf_scraping.git
 
+# Running the spider
+
+After installing scrapy via
+
+    pip install scrapy
+
+you can run the code via
+
+    scrapy crawl stk_inf_gh
+
+Add the option `--output result.csv` to generate a `.csv` file.
+
+# Testing out things
+
+You can start the scrapy shell using the command
+
+    scrapy shell
+
 # Pipelines
 
 The [pipelines branch][pl] contains some example pipelines in the file
